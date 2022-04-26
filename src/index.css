@@ -1,0 +1,75 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: rgb(50, 123, 168);
+}
+
+.controls {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+}
+
+#reportArea {
+  display: block;
+  font    : 1em "handwriting", cursive, sans-serif;
+  border  : none;
+  padding : 0 10px;
+  margin  : 10px 0px 10px 0px;
+  width   : 100%;
+  height  : 50%;
+  background : none;
+  resize: none;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+#reportArea:focus {
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+
+#ContainerSVG {
+  background-color: rgb(50, 123, 168);  
+}
+
+#ContainerSVG text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7pt;
+  fill: white;
+  fill-opacity: 0.7;
+  cursor: default;
+}
+
+#ContainerSVG text:hover {
+  fill: rgb(145, 171, 230);
+}
+
+#ContainerSVG > path {
+  filter: 
+  drop-shadow(1px 1px 1px rgb(38, 87, 117))
+}
+
+#ContainerSVG > g > path:hover {
+  fill: rgb(145, 171, 230);
+}
+
+.innerControl {
+  fill:white
+}
+
+.innerControl:hover {
+  fill: rgb(145, 171, 230);
+}
+
+.segment-lit {
+  fill: rgb(211, 228, 232);
+}
+
+.segment-unlit {
+  fill: rgb(86, 93, 94);
+}
+
+.segment-broken {
+  fill: rgb(224, 45, 45);
+}
